@@ -14,9 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UserDefaultsDatabase.shared.currentUser = [Key.currentUser: "Carlos"]
-        UserDefaultsDatabase.shared.isLogged = [Key.isLogged : true]
-        print(userDefaults.currentUser)
+//        UserDefaultsDatabase.shared.currentUser = [Key.currentUser: "Carlos"]
+//        UserDefaultsDatabase.shared.isLogged = [Key.isLogged : true]
+//        print(userDefaults.currentUser)
     }
 
 }
