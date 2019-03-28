@@ -20,7 +20,6 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mFA-MA-r5H">
                         <rect key="frame" x="10" y="10" width="50" height="60.5"/>
-                        <color key="backgroundColor" red="1" green="0.084393614219999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="TvB-H4-dW5"/>
                         </constraints>
@@ -53,6 +52,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="countryImage" destination="mFA-MA-r5H" id="FPr-lu-2LV"/>
                 <outlet property="countryName" destination="mmj-2b-yoq" id="8yz-qV-NKj"/>
             </connections>
             <point key="canvasLocation" x="56.799999999999997" y="-27.436281859070466"/>

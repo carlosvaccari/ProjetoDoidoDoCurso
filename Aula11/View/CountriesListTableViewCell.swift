@@ -9,7 +9,9 @@
 import UIKit
 
 class CountriesListTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var countryImage: UIImageView!
+    
     @IBOutlet weak var countryName: UILabel!
     
     override func awakeFromNib() {

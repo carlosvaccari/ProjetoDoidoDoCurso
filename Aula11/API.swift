@@ -68,8 +68,8 @@ extension API {
             print("STATUS CODE: \(response.response?.statusCode ?? 0)")
             switch response.result {
             case .success:
-                if let json = response.result.value as? [[String: Any]] {
-                    callback(json, response.error)
+                if let json = response.result.value as? [String: Any] {
+                    callback(json["results"] as! [[String: Any]], response.error)
                 } else {
                     callback([], response.error)
                 }

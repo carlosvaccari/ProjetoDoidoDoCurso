@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CountriesViewController: UIViewController {
     
@@ -45,6 +46,9 @@ extension CountriesViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath) as! CountriesListTableViewCell
         cell.countryName.text = countryList[indexPath.row].countryName
+        if let urlString = countryList[indexPath.row].flag?.url, let url = URL(string: urlString) {
+            cell.countryImage.kf.setImage(with: url)
+        }
         return cell
 
     }
