@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA065858224E9C05007AA53F /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA065857224E9C05007AA53F /* TeamViewController.swift */; };
+		BA06585A224EAA59007AA53F /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA065859224EAA59007AA53F /* Players.swift */; };
 		BA1B694A224D3D6B00CFA08B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B6949224D3D6B00CFA08B /* AppDelegate.swift */; };
 		BA1B694C224D3D6B00CFA08B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B694B224D3D6B00CFA08B /* ViewController.swift */; };
 		BA1B694F224D3D6B00CFA08B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1B694D224D3D6B00CFA08B /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		9354955EE947D502B50C3B76 /* Pods-Aula11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aula11.debug.xcconfig"; path = "Target Support Files/Pods-Aula11/Pods-Aula11.debug.xcconfig"; sourceTree = "<group>"; };
 		B9C11B4F71C52FFDBB9B6509 /* Pods-Aula11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aula11.release.xcconfig"; path = "Target Support Files/Pods-Aula11/Pods-Aula11.release.xcconfig"; sourceTree = "<group>"; };
+		BA065857224E9C05007AA53F /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		BA065859224EAA59007AA53F /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		BA1B6946224D3D6B00CFA08B /* Aula11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aula11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1B6949224D3D6B00CFA08B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA1B694B224D3D6B00CFA08B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			children = (
 				BA1B694B224D3D6B00CFA08B /* ViewController.swift */,
 				BA1B6960224D465700CFA08B /* CountriesListViewController.swift */,
+				BA065857224E9C05007AA53F /* TeamViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				BA1B6972224D5C9700CFA08B /* Country.swift */,
+				BA065859224EAA59007AA53F /* Players.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA06585A224EAA59007AA53F /* Players.swift in Sources */,
 				BA1B6973224D5C9800CFA08B /* Country.swift in Sources */,
+				BA065858224E9C05007AA53F /* TeamViewController.swift in Sources */,
 				BA1B694C224D3D6B00CFA08B /* ViewController.swift in Sources */,
 				BA1B6961224D465700CFA08B /* CountriesListViewController.swift in Sources */,
 				BA1B6966224D478D00CFA08B /* CountriesListTableViewCell.swift in Sources */,

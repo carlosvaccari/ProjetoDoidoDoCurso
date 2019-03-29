@@ -12,15 +12,17 @@ struct Country {
     let countryImage : String?
     let countryName : String?
     let flag: Flag?
+    let id: String?
     
     init(json: [String: Any]) {
         
         countryImage = json["coverImage"] as? String ?? ""
         countryName = json["name"] as? String ?? ""
         flag = Flag(json: json["flag"] as? [String : Any] ?? [:])
+        id = json["objectId"] as? String ?? ""
     }
     
-    static func getCountries(callback: @escaping (_ albums : [Country], _ error: Error?)->()) {
+    static func getCountries(callback: @escaping (_ albums : [Country], _ error: Error?) -> ()) {
         
         API.getCountriesList.request { countriesJSON, error in
             

@@ -12,7 +12,7 @@ import Alamofire
 enum API {
     
     case getCountriesList
-    case getPlayersBy(id: Int)
+    case getPlayersBy(id: String)
     case openPackage
 }
 
@@ -62,7 +62,8 @@ extension API {
     
     func request(params: [String: Any] = [:], callback: @escaping (_ data : [[String: Any]], _ error: Error?)->()) {
         
-        let request = Alamofire.request(url, method: method, parameters: nil, encoding: JSONEncoding.prettyPrinted, headers: header)
+        let urlEncoded = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? url
+        let request = Alamofire.request(urlEncoded, method: method, parameters: nil, encoding: JSONEncoding.prettyPrinted, headers: header)
         
         request.validate().responseJSON { response in
             print("STATUS CODE: \(response.response?.statusCode ?? 0)")

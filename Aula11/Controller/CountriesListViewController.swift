@@ -34,6 +34,15 @@ class CountriesViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToTeam" {
+            let vc = segue.destination as! TeamViewController
+            vc.teamInfos = sender as? Country
+        }
+        
+    }
+    
 }
 
 extension CountriesViewController: UITableViewDelegate, UITableViewDataSource {
@@ -52,5 +61,12 @@ extension CountriesViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
 
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("TCHAU \(countryList[indexPath.row])")
+        performSegue(withIdentifier: "goToTeam", sender: countryList[indexPath.row])
+    }
+    
+
     
 }
